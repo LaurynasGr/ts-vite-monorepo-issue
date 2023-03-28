@@ -1,0 +1,15 @@
+{
+  "name": "@demo/main",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@demo/form-utils": "workspace:^0.0.0",
+    "@demo/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@demo/tsconfig": "workspace:*"
+  }
+}

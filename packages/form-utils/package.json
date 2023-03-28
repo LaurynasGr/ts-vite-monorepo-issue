@@ -1,0 +1,28 @@
+{
+  "name": "@demo/form-utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/demo-utils.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/demo-utils.js"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "@demo/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@demo/tsconfig": "workspace:*",
+    "@vitejs/plugin-react-swc": "^3.1.0",
+    "vite-plugin-dts": "^2.1.0"
+  }
+}
